@@ -3,7 +3,13 @@
 import os
 import sys
 
+if not os.path.exists('.mergerc'):
+	print >> sys.stderr, '* invalid target directory'
+	raise SystemExit, 1
+
 execfile('.mergerc')
+
+os.system('rm -rf *')
 
 def proc_dir(dpath, rel_dpath):
 	try: os.mkdir(rel_dpath)
