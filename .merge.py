@@ -1,14 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import os
 import sys
 
-dirs = [
-	'/media/SENJOUGAHARA/box/작품',
-	'/media/SAKAGAMI/box/작품',
-	'/home/barosl/box/작품',
-]
+execfile('.mergerc')
 
 def proc_dir(dpath, rel_dpath):
 	try: os.mkdir(rel_dpath)

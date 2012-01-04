@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+dirs = [
+	'/media/Senjougahara/box/작품',
+	'/media/Sakagami/box/작품',
+	'/home/barosl/box/작품',
+]
